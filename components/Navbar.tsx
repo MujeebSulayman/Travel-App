@@ -1,31 +1,30 @@
 'use client';
 
-import React, { useState } from 'react';
-import Image from 'next/image';
 import { NAV_LINKS } from '@/constants';
+import Image from 'next/image';
 import Link from 'next/link';
 import Button from './Button';
+import { useState } from 'react';
 
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
-
 	return (
-		<nav className='flexBetween max-container padding-container bg-gray-600 relative z-30 py-5'>
-			<Link href={'/'}>
+		<nav className='flexBetween max-container bg-slate-600 padding-container relative z-30 py-5'>
+			<Link href='/'>
 				<Image
 					src='/hilink-logo.svg'
 					alt='logo'
-					height={89}
-					width={79}
+					width={74}
+					height={29}
 				/>
 			</Link>
 
 			<ul className='hidden h-full gap-12 lg:flex'>
-				{NAV_LINKS.map((link, index) => (
+				{NAV_LINKS.map((link) => (
 					<Link
 						href={link.href}
 						key={link.key}
-						className={`regular-16 text-gray-100 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold`}>
+						className='regular-16 text-white flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold'>
 						{link.label}
 					</Link>
 				))}
@@ -40,27 +39,26 @@ const Navbar = () => {
 				/>
 			</div>
 
-			{/*-------------------- Mobile Devices------------- */}
-			<div className='sm:hidden flex flex-1 justify-end items-center'>
+			<div className='cursor-pointer sm:hidden flex flex-1 justify-end items-center'>
 				<Image
 					src={toggle ? 'close.svg' : 'menu.svg'}
 					alt='menu'
-					height={32}
-					width={32}
-					className='inline-block cursor-pointer lg:hidden'
+					width={25}
+					height={25}
 					onClick={() => setToggle((prev) => !prev)}
 				/>
-
 				<div
 					className={`${
 						toggle ? 'flex' : 'hidden'
-					} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
-					<ul className='list-none flex-col justify-end items-center flex-1'>
-						{NAV_LINKS.map((link) => (
+					} p-6 bg-black-gradient absolute top-[55px] right-0 mx-5 my-2 min-w-[140px] rounded-xl sidebar`}>
+					<ul className='list-none justify-end items-center'>
+						{NAV_LINKS.map((link, index) => (
 							<Link
 								href={link.href}
 								key={link.key}
-								className={`font-poppins font-normal cursor-pointer text-[16px] text-white`}>
+								className={`font-normal text-white cursor-pointer flex flex-col text-[16px] ${
+											index === NAV_LINKS.length - 1 ? 'mr-3' : 'mb-4'
+							}`}>
 								{link.label}
 							</Link>
 						))}
