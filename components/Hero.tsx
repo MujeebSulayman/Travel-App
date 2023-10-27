@@ -3,7 +3,7 @@ import Button from './Button';
 
 const Hero = () => {
 	return (
-		<section className='max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-[68px] lg:py-20 xl:flex-row'>
+		<section className='max-container padding-container flex flex-col gap-20 py-10 pt-[80px] pb-32 md:gap-[68px] lg:py-20 xl:flex-row'>
 			<div className='hero-map' />
 
 			{/* Left side */}
@@ -19,7 +19,7 @@ const Hero = () => {
 				<p className='regular-16 mt-6 text-gray-30 xl:max-w-[520px]'>
 					We want to be on each of your journeys seeking the satisfaction of
 					seeing the incurruptible beauty of nature. We can help you on an
-					adventure around the world in just one app
+					adventure around the world in just one app.
 				</p>
 				<div className='my-11 flex flex-wrap gap-5'>
 					<div className='flex items-center gap-2'>

@@ -63,15 +63,13 @@ const Navbar = () => {
 								{link.label}
 							</Link>
 						))}
-						
-							<Button
-								type='button'
-								title='Login / Sign Up'
-								icon='/user.svg'
-								variant='btn_dark_green1'
-								
-							/>
-						
+
+						<Button
+							type='button'
+							title='Login / Sign Up'
+							icon='/user.svg'
+							variant='btn_dark_green1'
+						/>
 					</ul>
 				</div>
 			</div>
