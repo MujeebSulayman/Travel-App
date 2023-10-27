@@ -9,7 +9,7 @@ import { useState } from 'react';
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
 	return (
-		<nav className='flexBetween max-container bg-slate-600 padding-container relative z-30 py-5'>
+		<nav className='flexBetween max-container bg-gray-500 padding-container relative z-30 py-5'>
 			<Link href='/'>
 				<Image
 					src='/hilink-logo.svg'
@@ -35,10 +35,11 @@ const Navbar = () => {
 					type='button'
 					title='Login'
 					icon='/user.svg'
-					variant='btn_dark_green'
+					variant='btn_dark_green1'
 				/>
 			</div>
 
+			{/* Mobile Navigation */}
 			<div className='cursor-pointer sm:hidden flex flex-1 justify-end items-center'>
 				<Image
 					src={toggle ? 'close.svg' : 'menu.svg'}
@@ -50,15 +51,15 @@ const Navbar = () => {
 				<div
 					className={`${
 						toggle ? 'flex' : 'hidden'
-					} p-6 bg-black-gradient absolute top-[55px] right-0 mx-5 my-2 min-w-[140px] rounded-xl sidebar`}>
+					} p-6 bg-gray-500 absolute top-[55px] right-0 mx-5 my-2 min-w-[140px] rounded-xl sidebar`}>
 					<ul className='list-none justify-end items-center'>
 						{NAV_LINKS.map((link, index) => (
 							<Link
 								href={link.href}
 								key={link.key}
 								className={`font-normal text-white cursor-pointer flex flex-col text-[16px] ${
-											index === NAV_LINKS.length - 1 ? 'mr-3' : 'mb-4'
-							}`}>
+									index === NAV_LINKS.length - 1 ? 'mr-3' : 'mb-4'
+								}`}>
 								{link.label}
 							</Link>
 						))}
