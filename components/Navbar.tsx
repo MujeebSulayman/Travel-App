@@ -51,7 +51,7 @@ const Navbar = () => {
 				<div
 					className={`${
 						toggle ? 'flex' : 'hidden'
-					} p-6 bg-gray-500 absolute top-[55px] right-0 mx-5 my-2 min-w-[140px] rounded-xl sidebar`}>
+					} p-6 bg-gray-500 absolute top-[55px] right-0 mx-5 my-2 min-w-[140px] rounded-b-xl sidebar`}>
 					<ul className='list-none justify-end items-center'>
 						{NAV_LINKS.map((link, index) => (
 							<Link
