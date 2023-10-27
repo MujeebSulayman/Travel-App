@@ -9,7 +9,7 @@ import { useState } from 'react';
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
 	return (
-		<nav className='flexBetween max-container bg-gray-500 padding-container relative z-30 py-5'>
+		<nav className='flexBetween max-container lg:bg-gray-200 bg-gray-500 padding-container relative z-30 py-5'>
 			<Link href='/'>
 				<Image
 					src='/hilink-logo.svg'
@@ -19,12 +19,12 @@ const Navbar = () => {
 				/>
 			</Link>
 
-			<ul className='hidden h-full gap-12 lg:flex'>
+			<ul className='hidden h-full gap-10 lg:flex'>
 				{NAV_LINKS.map((link) => (
 					<Link
 						href={link.href}
 						key={link.key}
-						className='regular-16 text-white flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold'>
+						className=' text-black flexCenter cursor-pointer pb-1.5 transition-all font-normal hover:font-bold'>
 						{link.label}
 					</Link>
 				))}
@@ -33,7 +33,7 @@ const Navbar = () => {
 			<div className='lg:flexCenter hidden'>
 				<Button
 					type='button'
-					title='Login'
+					title='Login / Sign Up'
 					icon='/user.svg'
 					variant='btn_dark_green1'
 				/>
@@ -57,12 +57,21 @@ const Navbar = () => {
 							<Link
 								href={link.href}
 								key={link.key}
-								className={`font-normal text-white cursor-pointer flex flex-col text-[16px] ${
+								className={`font-normal text-white cursor-pointer flex flex-col text-[16px] hover:font-bold ${
 									index === NAV_LINKS.length - 1 ? 'mr-3' : 'mb-4'
 								}`}>
 								{link.label}
 							</Link>
 						))}
+						
+							<Button
+								type='button'
+								title='Login / Sign Up'
+								icon='/user.svg'
+								variant='btn_dark_green1'
+								
+							/>
+						
 					</ul>
 				</div>
 			</div>

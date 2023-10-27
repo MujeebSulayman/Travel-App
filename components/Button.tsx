@@ -11,7 +11,7 @@ type ButtonProps = {
 const Button = ({ type, title, icon, variant, full }: ButtonProps) => {
 	return (
 		<button
-			className={`flexCenter gap-3 rounded-full border ${variant} ${
+			className={`flexCenter gap-3 lg:mt-[0px] mt-[20px] rounded-full border ${variant} ${
 				full && 'w-full'
 			}`}
 			type={type}>
@@ -19,11 +19,11 @@ const Button = ({ type, title, icon, variant, full }: ButtonProps) => {
 				<Image
 					src={icon}
 					alt={title}
-					width={24}
-					height={24}
+					width={22}
+					height={22}
 				/>
 			)}
-			<label className='bold-16 whitespace-nowrap cursor-pointer'>
+			<label className='text-bold whitespace-nowrap cursor-pointer'>
 				{title}
 			</label>
 		</button>
