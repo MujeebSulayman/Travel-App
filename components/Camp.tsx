@@ -16,7 +16,7 @@ const CampSite = ({
 }: CampProps) => {
 	return (
 		<div
-			className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}>
+			className={`h-full min-w-[1100px] ${backgroundImage} bg-cover justify-center items-center bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}>
 			<div className='flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10'>
 				<div className='flexCenter gap-4'>
 					<div className='rounded-full bg-green-50 p-4'>
@@ -65,6 +65,12 @@ const Camp = () => {
 				/>
 				<CampSite
 					backgroundImage='bg-bg-img-2'
+					title='Agodi Garden'
+					subtitle='Somewhere in Ibadan'
+					peopleJoined='50+ Joined'
+				/>
+				<CampSite
+					backgroundImage='bg-bg-img-3'
 					title='Mountain View Camp'
 					subtitle='Somewhere in Layipo'
 					peopleJoined='50+ Joined'

@@ -67,7 +67,6 @@ const Navbar = () => {
 						<Button
 							type='button'
 							title='Login / Sign Up'
-							icon='/user.svg'
 							variant='btn_dark_green1'
 						/>
 					</ul>
