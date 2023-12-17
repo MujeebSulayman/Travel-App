@@ -18,26 +18,26 @@ const GetApp = () => {
 							title='App Store'
 							icon='/apple.svg'
 							variant='btn_white'
-              full
+							full
 						/>
 						<Button
 							type='button'
 							title='Play Store'
 							icon='/android.svg'
 							variant='btn_dark_green_outline'
-              full
+							full
 						/>
 					</div>
 				</div>
 
-        <div className='flex flex-1 items-center justify-end'>
-          <Image 
-          src='/phones.png'
-          alt='phones'
-          height={870}
-          width={550}
-          />
-        </div>
+				<div className='flex flex-1 items-center justify-end'>
+					<Image
+						src='/phones.png'
+						alt='phones'
+						height={870}
+						width={500}
+					/>
+				</div>
 			</div>
 		</section>
 	);

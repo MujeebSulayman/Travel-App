@@ -1,6 +1,6 @@
 'use client';
 
-import { NAV_LINKS } from '@/constants';
+import { PAGE_NAVLINKS } from '@/constants';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from './Button';
@@ -20,12 +20,12 @@ const Navbar = () => {
 			</Link>
 
 			<ul className='hidden h-full gap-10 lg:flex'>
-				{NAV_LINKS.map((link) => (
+				{PAGE_NAVLINKS.map((link) => (
 					<Link
 						href={link.href}
-						key={link.key}
+						key={link.id}
 						className=' text-black flexCenter cursor-pointer pb-1.5 transition-all font-normal hover:font-bold'>
-						{link.label}
+						{link.title}
 					</Link>
 				))}
 			</ul>
@@ -53,14 +53,14 @@ const Navbar = () => {
 						toggle ? 'flex' : 'hidden'
 					} p-6 bg-gray-500 absolute top-[55px] right-0 mx-5 my-2 min-w-[140px] rounded-b-xl sidebar`}>
 					<ul className='list-none justify-end items-center'>
-						{NAV_LINKS.map((link, index) => (
+						{PAGE_NAVLINKS.map((link, index) => (
 							<Link
 								href={link.href}
-								key={link.key}
+								key={link.id}
 								className={`font-normal text-white cursor-pointer flex flex-col text-[16px] hover:font-bold ${
-									index === NAV_LINKS.length - 1 ? 'mr-3' : 'mb-4'
+									index === PAGE_NAVLINKS.length - 1 ? 'mr-3' : 'mb-4'
 								}`}>
-								{link.label}
+								{link.title}
 							</Link>
 						))}
 
