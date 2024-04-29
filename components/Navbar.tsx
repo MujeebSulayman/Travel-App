@@ -9,7 +9,7 @@ import { useState } from 'react';
 const Navbar = () => {
 	const [toggle, setToggle] = useState(false);
 	return (
-		<nav className='flexBetween lg:bg-gray-200 bg-gray-500 padding-container relative z-30 py-5'>
+		<nav className='flex justify-between items-center lg:bg-gray-200 bg-gray-500 padding-container relative z-30 py-5'>
 			<Link href='/'>
 				<Image
 					src='/hilink-logo.svg'
