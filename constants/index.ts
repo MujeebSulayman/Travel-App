@@ -45,7 +45,7 @@ export const FEATURES = [
 		icon: '/calendar.svg',
 		variant: 'green',
 		description:
-			"Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+			"Schedule an adventure with friends. On holidays, there are many interesting offers from Hiker. That way, there's no more discussion",
 	},
 	{
 		title: 'Technology using augment reality',
@@ -59,7 +59,7 @@ export const FEATURES = [
 		icon: '/location.svg',
 		variant: 'orange',
 		description:
-			'Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing',
+			'Lots of new locations every month, because we have a worldwide community of hikers and climbers who share their best experiences with climbing',
 	},
 ];
 
@@ -68,9 +68,7 @@ export const FOOTER_LINKS = [
 	{
 		title: 'Learn More',
 		links: [
-			'About Hilink',
-			'Press Releases',
-			'Environment',
+			'About Hiker',
 			'Jobs',
 			'Privacy Policy',
 			'Contact Us',
@@ -78,15 +76,16 @@ export const FOOTER_LINKS = [
 	},
 	{
 		title: 'Our Community',
-		links: ['Climbing xixixi', 'Hiking hilink', 'Hilink kinthill'],
+		links: ['Climbing xixixi', 'Hiking Hiker', 'Hiker kinthill'],
 	},
 ];
 
 export const FOOTER_CONTACT_INFO = {
 	title: 'Contact Us',
 	links: [
-		{ label: 'Admin Officer', value: '123-456-7890' },
-		{ label: 'Email Officer', value: 'hilink@akinthil.com' },
+		{ label: 'Phone number', value: '+234 705 3250 527' },
+		{ label: 'Email', value: 'sulaymanmujeeb6@gmail.com' },
+		{label: 'Woking Hours', value: 'Mon - Fri (10PM - 5PM)'}
 	],
 };
 
@@ -96,7 +95,5 @@ export const SOCIALS = {
 		'/facebook.svg',
 		'/instagram.svg',
 		'/twitter.svg',
-		'/youtube.svg',
-		'/wordpress.svg',
 	],
 };

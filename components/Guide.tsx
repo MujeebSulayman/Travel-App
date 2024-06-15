@@ -27,13 +27,13 @@ const Guide = () => {
 					</p>
 				</div>
 			</div>
-			<div className='flexCenter max-container relative w-full'>
+			<div className='flexCenter max-w-[1450px] relative w-full'>
 				<Image
 					src='/boat.png'
 					alt='boat'
 					width={1440}
 					height={580}
-					className='w-full object-cover object-center 2xl:rounded-5xl'
+					className='w-full h-fit object-cover object-center'
 				/>
 
 				<div className='absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-md md:left-[5%] lg:top-20'>
@@ -47,15 +47,15 @@ const Guide = () => {
 					<div className='flexBetween flex-col'>
 						<div className='flex w-full flex-col'>
 							<div className='flexBetween w-full'>
-								<p className='regular-16 text-gray-20'>Destination</p>
-								<p className='bold-16 text-green-50'>48 min</p>
+								<p className='regular-16 text-gray-20 mr-9'>Start Track</p>
+								<p className='bold-16 text-green-50'>20 mins</p>
 							</div>
-							<p className='bold-20 mt-2'>Agodi Garden</p>
+							<p className='bold-20 mb-4'>Iwo Road</p>
 						</div>
 
 						<div className='flex w-full flex-col'>
-							<p className='regular-16 text-gray-20'>Start track</p>
-							<h4 className='bold-20 mt-2 whitespace-nowrap'>New Garage</h4>
+							<p className='regular-16 text-gray-20'>Destination</p>
+							<h4 className='bold-20 whitespace-nowrap'>Agodi Garden</h4>
 						</div>
 					</div>
 				</div>
